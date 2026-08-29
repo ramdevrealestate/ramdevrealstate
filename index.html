@@ -3,9 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>RAMDEV REAL ESTATE</title>
 
 <style>
+
 *{
     margin:0;
     padding:0;
@@ -21,6 +23,8 @@ body{
     background:#f5f5f5;
     color:#222;
 }
+
+/* HEADER */
 
 header{
     background:#111;
@@ -51,6 +55,8 @@ nav a:hover{
     color:#f5b400;
 }
 
+/* HERO */
+
 .hero{
     min-height:520px;
     display:flex;
@@ -58,9 +64,11 @@ nav a:hover{
     justify-content:center;
     text-align:center;
     padding:50px 20px;
+
     background:
     linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
     url("https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1600&q=80");
+
     background-size:cover;
     background-position:center;
 }
@@ -96,6 +104,8 @@ nav a:hover{
     font-weight:bold;
     cursor:pointer;
 }
+
+/* SECTION */
 
 section{
     padding:55px 6%;
@@ -215,6 +225,10 @@ section{
     background:#25D366;
 }
 
+.call{
+    background:#1976d2;
+}
+
 .email{
     background:#111;
 }
@@ -242,6 +256,10 @@ section{
     line-height:1.8;
 }
 
+.about-text p{
+    margin-bottom:15px;
+}
+
 /* CONTACT */
 
 .contact{
@@ -256,7 +274,7 @@ section{
 }
 
 .contact p{
-    margin:10px 0;
+    margin:12px 0;
 }
 
 /* ADMIN BUTTON */
@@ -319,9 +337,9 @@ section{
 
 .login-box{
     max-width:400px;
-    margin:80px auto;
+    margin:30px auto;
     background:white;
-    padding:30px;
+    padding:10px;
     border-radius:12px;
 }
 
@@ -351,6 +369,7 @@ section{
 
 .field textarea{
     min-height:100px;
+    resize:vertical;
 }
 
 .save{
@@ -493,11 +512,18 @@ section{
         margin-bottom:10px;
     }
 
+    .contact-buttons{
+        flex-direction:column;
+    }
+
 }
+
 </style>
 </head>
 
 <body>
+
+<!-- HEADER -->
 
 <header>
 
@@ -506,10 +532,21 @@ section{
     </div>
 
     <nav>
+
         <a href="#home">Home</a>
-        <a href="#properties">Properties</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+
+        <a href="#properties">
+            Properties
+        </a>
+
+        <a href="#about">
+            About
+        </a>
+
+        <a href="#contact">
+            Contact
+        </a>
+
     </nav>
 
 </header>
@@ -680,8 +717,27 @@ section{
     </h2>
 
     <p>
+        📞
+        <a href="tel:+918155856070">
+            +91 8155856070
+        </a>
+    </p>
+
+    <p>
+        💬
+        <a
+            href="https://wa.me/918155856070"
+            target="_blank"
+        >
+            WhatsApp Us
+        </a>
+    </p>
+
+    <p>
         📧
-        <a href="mailto:ramdevrealestate15@gmail.com">
+        <a
+            href="mailto:ramdevrealestate15@gmail.com"
+        >
             ramdevrealestate15@gmail.com
         </a>
     </p>
@@ -699,8 +755,20 @@ section{
 </section>
 
 
-<footer style="background:#000;color:#aaa;text-align:center;padding:20px;">
-    © 2026 RAMDEV REAL ESTATE. All Rights Reserved.
+<!-- FOOTER -->
+
+<footer
+    style="
+    background:#000;
+    color:#aaa;
+    text-align:center;
+    padding:20px;
+    "
+>
+
+    ©️ 2026 RAMDEV REAL ESTATE.
+    All Rights Reserved.
+
 </footer>
 
 
@@ -764,7 +832,6 @@ section{
 
                 </div>
 
-
                 <div class="field">
 
                     <label>
@@ -778,7 +845,6 @@ section{
                     >
 
                 </div>
-
 
                 <button
                     class="save"
@@ -799,7 +865,14 @@ section{
             id="dashboard"
         >
 
-            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
+            <div
+                style="
+                display:flex;
+                justify-content:space-between;
+                align-items:center;
+                margin-bottom:20px;
+                "
+            >
 
                 <h2>
                     Admin Dashboard
@@ -814,6 +887,8 @@ section{
 
             </div>
 
+
+            <!-- STATS -->
 
             <div class="stats">
 
@@ -850,6 +925,8 @@ section{
             </div>
 
 
+            <!-- FORM -->
+
             <h3 id="formTitle">
                 ➕ Add Property
             </h3>
@@ -862,6 +939,8 @@ section{
                 id="editId"
             >
 
+
+            <!-- TITLE -->
 
             <div class="field">
 
@@ -878,6 +957,8 @@ section{
             </div>
 
 
+            <!-- LOCATION -->
+
             <div class="field">
 
                 <label>
@@ -893,6 +974,8 @@ section{
             </div>
 
 
+            <!-- PRICE -->
+
             <div class="field">
 
                 <label>
@@ -907,6 +990,8 @@ section{
 
             </div>
 
+
+            <!-- TYPE -->
 
             <div class="field">
 
@@ -949,6 +1034,8 @@ section{
             </div>
 
 
+            <!-- LISTING -->
+
             <div class="field">
 
                 <label>
@@ -970,6 +1057,8 @@ section{
             </div>
 
 
+            <!-- PHOTO -->
+
             <div class="field">
 
                 <label>
@@ -985,11 +1074,20 @@ section{
 
                 <img
                     id="photoPreview"
-                    style="display:none;width:100%;max-height:250px;object-fit:cover;margin-top:10px;border-radius:8px;"
+                    style="
+                    display:none;
+                    width:100%;
+                    max-height:250px;
+                    object-fit:cover;
+                    margin-top:10px;
+                    border-radius:8px;
+                    "
                 >
 
             </div>
 
+
+            <!-- DETAILS -->
 
             <div class="field">
 
@@ -1005,6 +1103,8 @@ section{
             </div>
 
 
+            <!-- SAVE -->
+
             <button
                 class="save"
                 onclick="saveProperty()"
@@ -1012,6 +1112,8 @@ section{
                 Save Property
             </button>
 
+
+            <!-- CANCEL -->
 
             <button
                 class="cancel"
@@ -1055,12 +1157,9 @@ let properties =
     ) || [];
 
 
-/*
-   IMPORTANT:
-   Aa demo admin login chhe.
-   Username: Ramdev
-   Password: Ramdev@6070
-*/
+/* ======================================
+   ADMIN LOGIN
+====================================== */
 
 let loggedIn = false;
 
@@ -1125,9 +1224,9 @@ function adminLogin(){
 
 
     if(
-        username === "Ramdev"
+        username === "ramdev"
         &&
-        password === "Ramdev@6070"
+        password === "ramdev6070"
     ){
 
         loggedIn = true;
@@ -1206,7 +1305,9 @@ function previewPhoto(event){
         event.target.files[0];
 
     if(!file){
+
         return;
+
     }
 
 
@@ -1243,8 +1344,13 @@ function previewPhoto(event){
 function saveProperty(){
 
     if(!loggedIn){
-        alert("Please login first.");
+
+        alert(
+            "Please login first."
+        );
+
         return;
+
     }
 
 
@@ -1315,7 +1421,7 @@ function saveProperty(){
     }
 
 
-    /* EDIT */
+    /* EDIT PROPERTY */
 
     if(editId !== ""){
 
@@ -1383,7 +1489,7 @@ function saveProperty(){
     }
 
 
-    /* ADD */
+    /* ADD PROPERTY */
 
     if(!file){
 
@@ -1458,11 +1564,14 @@ function finishSave(message){
 
     clearForm();
 
+
     displayProperties(
         properties
     );
 
+
     displayAdminProperties();
+
 
     alert(message);
 
@@ -1522,7 +1631,7 @@ function clearForm(){
 
 
     document.querySelector(
-        ".save"
+        "#dashboard .save"
     ).innerText =
         "Save Property";
 
@@ -1549,7 +1658,9 @@ function editProperty(id){
 
 
     if(!property){
+
         return;
+
     }
 
 
@@ -1614,7 +1725,7 @@ function editProperty(id){
 
 
     document.querySelector(
-        ".save"
+        "#dashboard .save"
     ).innerText =
         "Update Property";
 
@@ -1623,11 +1734,6 @@ function editProperty(id){
         "cancelEdit"
     ).style.display =
         "block";
-
-
-    document.querySelector(
-        ".modal-box"
-    ).scrollTop = 0;
 
 }
 
@@ -1644,7 +1750,7 @@ function cancelEdit(){
 
 
 /* ======================================
-   DELETE
+   DELETE PROPERTY
 ====================================== */
 
 function deleteProperty(id){
@@ -1701,10 +1807,22 @@ function displayAdminProperties(){
     if(properties.length === 0){
 
         list.innerHTML = `
-            <div style="padding:20px;background:#f4f4f4;border-radius:8px;text-align:center;">
+
+            <div
+                style="
+                padding:20px;
+                background:#f4f4f4;
+                border-radius:8px;
+                text-align:center;
+                "
+            >
+
                 No properties added yet.
+
             </div>
+
         `;
+
 
         updateStats();
 
@@ -1769,6 +1887,7 @@ function displayAdminProperties(){
                     </button>
 
                 </div>
+
             `;
 
 
@@ -1872,17 +1991,27 @@ function displayProperties(list){
 
             const whatsappText =
                 encodeURIComponent(
-                    "Hello RAMDEV REAL ESTATE, I am interested in " +
+
+                    "Hello RAMDEV REAL ESTATE, " +
+
+                    "I am interested in " +
+
                     property.title +
+
                     " in " +
+
                     property.location
+
                 );
 
 
             const emailSubject =
                 encodeURIComponent(
+
                     "Property Enquiry - " +
+
                     property.title
+
                 );
 
 
@@ -1898,6 +2027,7 @@ function displayProperties(list){
                     <span class="badge">
 
                         ${property.type}
+
                         • For ${property.listing}
 
                     </span>
@@ -1933,10 +2063,18 @@ function displayProperties(list){
 
                         <a
                             class="whatsapp"
-                            href="https://wa.me/?text=${whatsappText}"
+                            href="https://wa.me/918155856070?text=${whatsappText}"
                             target="_blank"
                         >
-                            WhatsApp
+                            💬 WhatsApp
+                        </a>
+
+
+                        <a
+                            class="call"
+                            href="tel:+918155856070"
+                        >
+                            📞 Call
                         </a>
 
 
@@ -1944,7 +2082,7 @@ function displayProperties(list){
                             class="email"
                             href="mailto:ramdevrealestate15@gmail.com?subject=${emailSubject}"
                         >
-                            Email
+                            📧 Email
                         </a>
 
                     </div>
@@ -1995,9 +2133,13 @@ function filterProperties(){
                 const text = (
 
                     property.title
+
                     + " "
+
                     + property.location
+
                     + " "
+
                     + property.details
 
                 ).toLowerCase();
@@ -2011,7 +2153,9 @@ function filterProperties(){
 
                     (
                         listing === "all"
+
                         ||
+
                         property.listing === listing
                     )
 
@@ -2019,7 +2163,9 @@ function filterProperties(){
 
                     (
                         type === "all"
+
                         ||
+
                         property.type === type
                     )
 
